@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import Image from "next/image";
 
 const FeaturedPosts: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const FeaturedPosts: React.FC = () => {
           <h2 className="text-4xl font-bold mb-4">Featured Posts</h2>
           <p className="text-gray-500">
             Problems trying to resolve the conflict between
-            <br /> the two major realms of Classical physics: Newtonian mechanics.
+            <br /> the two major realms of Classical physics Newtonian mechanics.
           </p>
         </div>
 
@@ -28,7 +29,7 @@ const FeaturedPosts: React.FC = () => {
                   srcSet="/icons5/mobileimg1.png" // Replace with your mobile-specific image
                 />
                 {/* Default Image (Desktop) */}
-                <img
+                <Image
                   src="/icons5/img3_1.png"
                   alt="Featured Post 1"
                   className="w-full h-52 object-cover"
@@ -40,13 +41,13 @@ const FeaturedPosts: React.FC = () => {
             </div>
             <div className="p-6">
               <p className="text-blue-500 text-xs mb-1">Google Trending New</p>
-              <h3 className="text-xl font-bold mb-2">Loudest à la Madison #1 (L'integral)</h3>
+              <h3 className="text-xl font-bold mb-2">Loudest à la Madison 1 (L  integral)</h3>
               <p className="text-gray-600 mb-4">
-                We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+                We focus on ergonomics and meeting you where you work. Its only a keystroke away.
               </p>
               <div className="flex items-center text-gray-400 text-sm">
                 <div className="flex items-center mr-4">
-                  <img
+                  <Image
                     src="/icons5/clock.png" // Add your date icon path
                     alt="Date"
                     className="w-4 h-4 mr-1"
@@ -54,7 +55,7 @@ const FeaturedPosts: React.FC = () => {
                   22 April 2021
                 </div>
                 <div className="flex items-center">
-                  <img
+                  <Image
                     src="/icons5/commentsicon.png" // Add your comments icon path
                     alt="Comments"
                     className="w-4 h-4 mr-1"
@@ -67,7 +68,7 @@ const FeaturedPosts: React.FC = () => {
                 className="block mt-4 text-blue-500 font-semibold hover:underline"
               >
                 Learn More
-                <img
+                <Image
                   src="/icons5/arrowicon.png" // Add your arrow icon path
                   alt="Learn More"
                   className="inline w-4 h-4 mr-1"
@@ -85,7 +86,7 @@ const FeaturedPosts: React.FC = () => {
                   media="(max-width: 768px)"
                   srcSet="/icons5/mobileimg2.png"
                 />
-                <img
+                <Image
                   src="/icons5/img3_2.png"
                   alt="Featured Post 2"
                   className="w-full h-52 object-cover"
@@ -97,13 +98,13 @@ const FeaturedPosts: React.FC = () => {
             </div>
             <div className="p-6">
               <p className="text-blue-500 text-xs mb-1">Google Trending New</p>
-              <h3 className="text-xl font-bold mb-2">Loudest à la Madison #1 (L'integral)</h3>
+              <h3 className="text-xl font-bold mb-2">Loudest à la Madison #1 (L  integral)</h3>
               <p className="text-gray-600 mb-4">
-                We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+                We focus on ergonomics and meeting you where you work. Its only a keystroke away.
               </p>
               <div className="flex items-center text-gray-400 text-sm">
                 <div className="flex items-center mr-4">
-                  <img
+                  <Image
                     src="/icons5/clock.png"
                     alt="Date"
                     className="w-4 h-4 mr-1"
@@ -111,7 +112,7 @@ const FeaturedPosts: React.FC = () => {
                   22 April 2021
                 </div>
                 <div className="flex items-center">
-                  <img
+                  <Image
                     src="/icons5/commentsicon.png"
                     alt="Comments"
                     className="w-4 h-4 mr-1"
@@ -124,7 +125,7 @@ const FeaturedPosts: React.FC = () => {
                 className="block mt-4 text-blue-500 font-semibold hover:underline"
               >
                 Learn More
-                <img
+                <Image
                   src="/icons5/arrowicon.png"
                   alt="Learn More"
                   className="inline w-4 h-4 mr-1"
@@ -141,7 +142,7 @@ const FeaturedPosts: React.FC = () => {
                   media="(max-width: 768px)"
                   srcSet="/icons5/mobileimg3.png"
                 />
-                <img
+                <Image
                   src="/icons5/img3_3.png"
                   alt="Featured Post 3"
                   className="w-full h-52 object-cover"
@@ -153,13 +154,13 @@ const FeaturedPosts: React.FC = () => {
             </div>
             <div className="p-6">
               <p className="text-blue-500 text-xs mb-1">Google Trending New</p>
-              <h3 className="text-xl font-bold mb-2">Loudest à la Madison #1 (L'integral)</h3>
+              <h3 className="text-xl font-bold mb-2">Loudest à la Madison 1 (L  integral)</h3>
               <p className="text-gray-600 mb-4">
-                We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+                We focus on ergonomics and meeting you where you work. Its only a keystroke away.
               </p>
               <div className="flex items-center text-gray-400 text-sm">
                 <div className="flex items-center mr-4">
-                  <img
+                  <Image
                     src="/icons5/clock.png"
                     alt="Date"
                     className="w-4 h-4 mr-1"
@@ -167,7 +168,7 @@ const FeaturedPosts: React.FC = () => {
                   22 April 2021
                 </div>
                 <div className="flex items-center">
-                  <img
+                  <Image
                     src="/icons5/commentsicon.png"
                     alt="Comments"
                     className="w-4 h-4 mr-1"
@@ -180,7 +181,7 @@ const FeaturedPosts: React.FC = () => {
                 className="block mt-4 text-blue-500 font-semibold hover:underline"
               >
                 Learn More
-                <img
+                <Image
                   src="/icons5/arrowicon.png"
                   alt="Learn More"
                   className="inline w-4 h-4 mr-1"

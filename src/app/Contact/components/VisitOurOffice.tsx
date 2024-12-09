@@ -1,6 +1,6 @@
  "use client";
 import React from "react";
-
+import Image from "next/image";
 const VisitOurOffice: React.FC = () => {
   return (
     <div className="font-montserrat">
@@ -21,7 +21,7 @@ const VisitOurOffice: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
             {/* Card 1 */}
             <div className="flex flex-col items-center py-4 bg-white shadow-md  hover:shadow-lg transition-all duration-300">
-              <img
+              <Image
                 src="/contactus/phone.png"
                 alt="Location Icon"
                 className="w-20 h-28 mb-6  py-4"
@@ -39,7 +39,7 @@ const VisitOurOffice: React.FC = () => {
 
             {/* Card 2 */}
             <div className="flex flex-col items-center text-white p-8 bg-customDarkBlue shadow-md hover:shadow-lg transition-all duration-300">
-              <img
+              <Image
                 src="/contactus/location.png"
                 alt="Branch Icon"
                 className="w-20 h-28 mb-6 py-4"
@@ -57,7 +57,7 @@ const VisitOurOffice: React.FC = () => {
 
             {/* Card 3 */}
             <div className="flex flex-col items-center p-8 bg-white shadow-md hover:shadow-lg transition-all duration-300">
-              <img
+              <Image
                 src="/contactus/mail.png"
                 alt="Support Icon"
                 className="w-20 h-28 mb-6"

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const NewSection: React.FC = () => {
   return (
@@ -31,7 +32,7 @@ const NewSection: React.FC = () => {
 
         {/* Right Side: Image */}
         <div className="right-image flex justify-center order-2 md:order-none mt-8 md:mt-0">
-          <img
+          <Image
             src="/icons4/img1.png" // Replace with your image path
             alt="Featured Product"
             className="w-3/4 h-auto object-cover"

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface ProductCardProps {
   image: string;
@@ -14,7 +15,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ image, name, subName, regular
   return (
     <div className={`product-card flex flex-col items-center h-full ${className}`}>
       {/* Image with height range and proper scaling */}
-      <img
+      <Image
         src={image}
         alt={name}
         className="w-full object-cover rounded-t-lg"

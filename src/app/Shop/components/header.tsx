@@ -1,18 +1,17 @@
- "use client"
+ "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header: React.FC = () => {
-  // State to manage dropdown visibility
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
-  // Toggle dropdown on click
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
 
   return (
-    <header className="  bg-customwhite  font-montserrat font-bold text-xl text-white">
+    <header className="bg-customwhite font-montserrat font-bold text-xl text-white">
       {/* Top Bar */}
       <div className="hidden sm:flex justify-between bg-green-700 items-center py-2 px-4 text-sm border-b border-gray-700">
         {/* Contact Info */}
@@ -33,18 +32,18 @@ const Header: React.FC = () => {
         {/* Social Icons */}
         <div className="flex items-center space-x-4">
           <span>Follow Us:</span>
-          <a href="#" aria-label="Instagram" className="hover:opacity-75">
+          <Link href="https://instagram.com" aria-label="Instagram" passHref>
             <Image src="/icons/instagram.png" alt="Instagram Icon" width={16} height={16} />
-          </a>
-          <a href="#" aria-label="YouTube" className="hover:opacity-75">
+          </Link>
+          <Link href="https://youtube.com" aria-label="YouTube" passHref>
             <Image src="/icons/youtube.png" alt="YouTube Icon" width={16} height={16} />
-          </a>
-          <a href="#" aria-label="Facebook" className="hover:opacity-75">
+          </Link>
+          <Link href="https://facebook.com" aria-label="Facebook" passHref>
             <Image src="/icons/facebook.png" alt="Facebook Icon" width={16} height={16} />
-          </a>
-          <a href="#" aria-label="Twitter" className="hover:opacity-75">
+          </Link>
+          <Link href="https://twitter.com" aria-label="Twitter" passHref>
             <Image src="/icons/twitter.png" alt="Twitter Icon" width={16} height={16} />
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -55,8 +54,8 @@ const Header: React.FC = () => {
 
         {/* Navigation Links for Desktop */}
         <nav className="hidden md:flex space-x-6 text-customDarkBlue">
-          <a href="/" className="hover:text-blue-400">Home</a>
-          
+          <Link href="/" className="hover:text-blue-400">Home</Link>
+
           {/* Shop Dropdown */}
           <div className="relative">
             <button
@@ -74,31 +73,31 @@ const Header: React.FC = () => {
                 className="absolute right-0 z-10 mt-2 w-40 rounded-md bg-white shadow-lg ring-1 ring-black/5"
                 role="menu"
               >
-                <a href="/Shop" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Men</a>
-                <a href="/Shop" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kids</a>
-                <a href="/Shop" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Brides</a>
-                <a href="/Shop" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Girls</a>
+                <Link href="/Shop" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Men</Link>
+                <Link href="/Shop" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kids</Link>
+                <Link href="/Shop" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Brides</Link>
+                <Link href="/Shop" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Girls</Link>
               </div>
             )}
           </div>
-          
-          <a href="/AboutUs" className="hover:text-blue-400">About</a>
-          <a href="/Shop" className="hover:text-blue-400">Blog</a>
-          <a href="/Contact" className="hover:text-blue-400">Contact</a>
-          <a href="/Home" className="hover:text-blue-400">Pages</a>
+
+          <Link href="/AboutUs" className="hover:text-blue-400">About</Link>
+          <Link href="/Shop" className="hover:text-blue-400">Blog</Link>
+          <Link href="/Contact" className="hover:text-blue-400">Contact</Link>
+          <Link href="/Home" className="hover:text-blue-400">Pages</Link>
         </nav>
 
         {/* Right Actions */}
         <div className="flex items-center space-x-4">
           {/* Login/Register (Only visible on desktop) */}
-          <a href="#" className="hidden sm:flex text-blue-400 hover:text-blue-950">
+          <Link href="#" className="hidden sm:flex text-blue-400 hover:text-blue-950">
             Login / Register
-          </a>
+          </Link>
 
           {/* Icons for Mobile and Desktop */}
           <div className="flex items-center space-x-4">
             {/* Cart Icon */}
-            <a href="#" aria-label="Cart">
+            <Link href="#" aria-label="Cart">
               <Image
                 src="/icons/cartforres.png"
                 alt="Cart Icon"
@@ -113,10 +112,10 @@ const Header: React.FC = () => {
                 height={50}
                 className="hidden sm:block" /* Desktop only */
               />
-            </a>
+            </Link>
 
             {/* Magnifier/Search Icon */}
-            <a href="#" aria-label="Search">
+            <Link href="#" aria-label="Search">
               <Image
                 src="/icons/megniresp.png"
                 alt="Search Icon (Mobile)"
@@ -131,7 +130,7 @@ const Header: React.FC = () => {
                 height={50}
                 className="hidden sm:block"
               />
-            </a>
+            </Link>
 
             {/* Mobile Menu Icon */}
             <Image
@@ -148,30 +147,30 @@ const Header: React.FC = () => {
       {/* Vertical Links */}
       <div className="bg-white px-2 py-2 sm:hidden flex items-center justify-center min-h-[30vh]">
         <nav className="space-y-2 font-bold font-bg text-slate-600">
-          <a
+          <Link
             href="/"
             className="block text-sm font-medium hover:bg-gray-200 p-2 rounded"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="/Shop"
             className="block text-sm font-medium hover:bg-gray-200 p-2 rounded"
           >
             Product
-          </a>
-          <a
+          </Link>
+          <Link
             href="/AboutUs"
             className="block text-sm font-medium hover:bg-gray-200 p-2 rounded"
           >
             About Us
-          </a>
-          <a
+          </Link>
+          <Link
             href="/Contact"
             className="block text-sm font-medium hover:bg-gray-200 p-2 "
           >
             Contact
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

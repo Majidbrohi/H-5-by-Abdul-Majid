@@ -5,7 +5,7 @@ import Image from "next/image";
 const BigCompanies: React.FC = () => {
   return (
     <section className="bg-lightBlue py-16 px-4 md:px-16 text-center font-montserrat">
-      <h2 className="text-customDarkBlue mb-6 font-bold text-2xl md:text-4xl mb-4">
+      <h2 className="text-customDarkBlue  font-bold text-2xl md:text-4xl mb-4">
         Big Companies Are Here
       </h2>
       <p className="text-gray-600 text-sm md:text-lg leading-relaxed mb-16">

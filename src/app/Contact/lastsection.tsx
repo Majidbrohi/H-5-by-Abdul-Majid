@@ -7,9 +7,9 @@ const LetsTalkCTA: React.FC = () => {
         <div className="container mx-auto px-8 lg:px-16 text-center text-gray-800">
           {/* Section Header */}
           <p className="text-base  font-bold mb-8">
-            WE CAN'T WAIT TO MEET YOU
+            WE CAN NOT WAIT TO MEET YOU
           </p>
-          <h2 className="text-5xl font-bold mb-6">Let’s Talk</h2>
+          <h2 className="text-5xl font-bold mb-6">Lets Talk</h2>
            
 
           {/* CTA Button */}

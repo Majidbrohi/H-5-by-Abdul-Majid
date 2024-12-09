@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 const NewSectionReverse: React.FC = () => {
   return (
     <section className="new-section-reverse relative bg-customwhite text-customDarkBlue px-8 py-12">
@@ -8,13 +8,13 @@ const NewSectionReverse: React.FC = () => {
         {/* Left Side: Image */}
         <div className="left-image flex justify-center">
           {/* Desktop Image */}
-          <img
+          <Image
             src="/icons4/img2.png" // Replace with your desktop image path
             alt="Featured Product"
             className="hidden md:block h-auto w-3/4 object-cover"
           />
           {/* Mobile Image */}
-          <img
+          <Image
             src="/icons4/img2-res.png" // Replace with your mobile image path
             alt="Featured Product (Mobile)"
             className="block md:hidden h-auto w-3/4 object-cover"

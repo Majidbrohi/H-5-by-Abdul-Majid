@@ -11,7 +11,7 @@ const Pagination: React.FC = () => {
         Prev
       </button>
 
-      <button className="px-4 py-2 border border-gray-300    text-sm text-blue-500 font-semibold bg-blue-500 text-white">
+      <button className="px-4 py-2 border border-gray-300    text-sm text-blue-500 font-semibold bg-blue-500 ">
         1
       </button>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ImageCardProps {
   src: string;
@@ -10,7 +11,7 @@ interface ImageCardProps {
 const ImageCard: React.FC<ImageCardProps> = ({ src, alt, label, className }) => {
   return (
     <div className={`relative w-full h-full ${className}`}>
-      <img
+      <Image
         src={src}
         alt={alt}
         className="w-full h-full object-cover"
@@ -27,7 +28,7 @@ const EditorsPick: React.FC = () => {
     <section className="editor-pick-section px-8 py-12 bg-gray-50">
       {/* Title */}
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-900">EDITOR'S PICK</h2>
+        <h2 className="text-3xl font-bold text-gray-900">EDITOR S PICK</h2>
         <p className="text-gray-600 mt-2">
           Problems trying to resolve the conflict between
         </p>

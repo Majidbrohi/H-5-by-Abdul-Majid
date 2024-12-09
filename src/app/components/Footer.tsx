@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
             <div className="flex-1">
               <h4 className="font-semibold mb-2">Resources</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-gray-400">IOS & Android</a></li>
+                <li><a href="#" className="hover:text-gray-400">IOS  Android</a></li>
                 <li><a href="#" className="hover:text-gray-400">Watch a Demo</a></li>
                 <li><a href="#" className="hover:text-gray-400">Customers</a></li>
                 <li><a href="#" className="hover:text-gray-400">API</a></li>
